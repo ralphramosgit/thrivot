@@ -1,0 +1,5 @@
+# Raw data
+raw datasets/
+
+# Cleaned data output
+data/cleaned_data/

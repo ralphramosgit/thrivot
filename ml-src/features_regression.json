@@ -1,0 +1,31 @@
+{
+  "feature_cols": [
+    "lat",
+    "lng",
+    "population",
+    "violent_crime_rate",
+    "property_crime_rate",
+    "flood_risk_score",
+    "wildfire_risk_score",
+    "hurricane_risk_score",
+    "tornado_risk_score",
+    "median_family_income",
+    "family_profile_encoded"
+  ],
+  "target": "cost_of_living_monthly",
+  "profile_encoding": {
+    "1p0c": 0,
+    "1p1c": 1,
+    "1p2c": 2,
+    "1p3c": 3,
+    "2p0c": 4,
+    "2p1c": 5,
+    "2p2c": 6
+  },
+  "regression_metrics": {
+    "r2": 0.9878,
+    "rmse": 230.16,
+    "mae": 158.46
+  },
+  "note": "Cost-of-living regression. Target fuses MIT non-housing costs with observed Zillow rent; inputs exclude all cost components to avoid leakage."
+}

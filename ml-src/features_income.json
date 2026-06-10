@@ -1,0 +1,31 @@
+{
+  "clf_features": [
+    "lat",
+    "lng",
+    "population",
+    "violent_crime_rate",
+    "property_crime_rate",
+    "flood_risk_score",
+    "wildfire_risk_score",
+    "hurricane_risk_score",
+    "tornado_risk_score",
+    "median_family_income",
+    "family_profile_encoded",
+    "user_income_monthly"
+  ],
+  "income_feature": "user_income_monthly",
+  "profile_encoding": {
+    "1p0c": 0,
+    "1p1c": 1,
+    "1p2c": 2,
+    "1p3c": 3,
+    "2p0c": 4,
+    "2p1c": 5,
+    "2p2c": 6
+  },
+  "metrics": {
+    "accuracy": 0.9838,
+    "roc_auc": 0.9991
+  },
+  "note": "Income-aware affordability classifier trained on cities replicated across many sampled incomes; user_income_monthly is an explicit feature, label = income >= real cost of living."
+}
